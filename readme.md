@@ -24,7 +24,9 @@ This project demonstrates how **Generative AI + RAG** can transform large unstru
 - [SentenceTransformers](https://www.sbert.net/)  
 - [FAISS](https://github.com/facebookresearch/faiss)  
 
+## 📊 System Architecture
 
+![System Architecture](flow.png)
 
 ```bash
 pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
