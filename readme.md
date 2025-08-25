@@ -33,7 +33,7 @@ pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
 ```
 ## 🚀 How It Works
 
-### 1. PDF Ingestion
+### PDF Ingestion
 
 - The system reads a PDF file using **PyPDF2**.
 - Each page's text is extracted and split into chunks (default: 1000 characters, preserving sentence boundaries).
@@ -41,7 +41,7 @@ pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
 - Embeddings are stored in a **FAISS** index for efficient similarity search.
 - Metadata (source file, page number, chunk index) is stored for traceability.
 
-### 2. Querying
+### Querying
 
 - User submits a natural language query.
 - The query is embedded using the same **SentenceTransformer** model.
@@ -58,9 +58,21 @@ pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
 - Place your PDF files (e.g., `mentalpolicy.pdf`) in the project directory.
 - Obtain a Google Gemini API key and set it in the notebook or script.
 
-### 2. Running the System
+### Running the System
 
 Open `main.ipynb` and run the cells in order.
+
+### 🎯 Project Highlights
+
+- ✔️ Demonstrates end-to-end RAG pipeline (ingestion → embeddings → retrieval → generation)
+- ✔️ Showcases enterprise knowledge search with Generative AI
+- ✔️ Built to be modular, extensible, and easy to demo
+
+### 🧑‍💻 Author
+
+- Your Name : Abhishek Tiwari
+
+- LinkedIn : https://www.linkedin.com/in/abhishek-tiwari-30289a1a7/
 
 
 
