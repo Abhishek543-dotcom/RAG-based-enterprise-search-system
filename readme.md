@@ -1,29 +1,35 @@
-# RAG-based Enterprise Search System
+# 📖 RAG-based Enterprise Search System
 
-This project implements a **Retrieval-Augmented Generation (RAG)** system for enterprise document search using PDF ingestion, semantic search with FAISS, and answer generation via Google Gemini. The system enables users to query large collections of documents and receive contextually relevant, AI-generated answers.
+A prototype **Retrieval-Augmented Generation (RAG)** system for enterprise document search.  
+It ingests PDF files, performs **semantic search with FAISS**, and generates **context-aware answers** using **Google Gemini 2.5 Flash**.  
 
----
-
-## Features
-
-- **PDF Ingestion:** Extracts and splits text from PDF files into manageable chunks.
-- **Semantic Embeddings:** Uses SentenceTransformers to generate vector embeddings for each text chunk.
-- **Vector Search:** Stores embeddings in a FAISS index for fast similarity search.
-- **Metadata Tracking:** Keeps track of source, page, and chunk for each text segment.
-- **RAG Querying:** Retrieves top relevant chunks and uses Gemini (Google Generative AI) to generate answers based on retrieved context.
-- **Extensible:** Easily add more documents or support other file types.
+This project demonstrates how **Generative AI + RAG** can transform large unstructured document collections into **actionable insights**.  
 
 ---
 
-## Requirements
-- Python 3.8+
-- [Google Generative AIPython SDK
-- [PyPDF2](https://pU](https://pypi.org/project/faiss-cpupi.org/projectdencies using:
+## ✨ Features
+- 📑 **PDF Ingestion** – Extracts and splits text from PDFs into manageable chunks.  
+- 🧠 **Semantic Embeddings** – Generates vector embeddings using **SentenceTransformers**.  
+- 🔍 **Vector Search** – Stores embeddings in a **FAISS index** for fast similarity search.  
+- 🏷️ **Metadata Tracking** – Maintains source file, page number, and chunk index.  
+- 🤖 **RAG Querying** – Retrieves top chunks + uses **Gemini API** for AI-generated answers.  
+- 🔌 **Extensible Design** – Add more documents or extend to other file formats easily.  
+
+---
+
+## 🛠️ Tech Stack
+- **Python 3.8+**  
+- [Google Generative AI SDK](https://pypi.org/project/google-generativeai/)  
+- [PyPDF2](https://pypi.org/project/PyPDF2/)  
+- [SentenceTransformers](https://www.sbert.net/)  
+- [FAISS](https://github.com/facebookresearch/faiss)  
+
+
 
 ```bash
 pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
 ```
-## How It Works
+## 🚀 How It Works
 
 ### 1. PDF Ingestion
 
