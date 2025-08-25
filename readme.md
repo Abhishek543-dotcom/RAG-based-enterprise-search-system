@@ -52,7 +52,7 @@ pip install google-generativeai pypdf2 faiss-cpu sentence-transformers numpy
 
 ### 2. Running the System
 
-Open `main.ipynb` and run the cells in order:
+Open `main.ipynb` and run the cells in order.
 
 
 
